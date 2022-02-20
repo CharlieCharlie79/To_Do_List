@@ -1,0 +1,30 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.to-do-list
+{
+    position: absolute;
+    background-color: antiquewhite;
+    height: 40rem;
+    width: 80rem;
+    top: 10rem;
+    left:20rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.header
+{
+   text-align: center;
+   margin: 15px 0;
+   border-bottom: 5px solid rgb(184, 171, 171);
+}
