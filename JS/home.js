@@ -1,9 +1,23 @@
+//This function is able to get the input of the user and put it one the ul creating an li
+function addItem()
+{
+    document.querySelector("#plus-icon").addEventListener('click', function(){
+        let input = document.querySelector("#myInput");
+        let list = document.querySelector("#myUL");
 
-var input = document.getElementById('myInput').value;
-var showInput = document.createElement('input');
-var myUL = document.getElementById("myUL");
-var myLI = document.createElement("myLI");
-var textNode = document.createTextNode('input'); 
+        let item = document.createElement('li'); // This creates li node
+        let itemText = document.createTextNode(input.value); // This creates a text node
+
+        item.appendChild(itemText); 
+        list.appendChild(item);
+
+        input.value = ""; 
+
+    })
+}
+
+
+
 
 document.querySelector('#plus-icon').onclick = function()
 {
@@ -13,16 +27,8 @@ document.querySelector('#plus-icon').onclick = function()
     }
   
     else
-    {
-       
-             /*myLI.appendChild(document.createTextNode(showInput));
-             myUL.appendChild(showInput);
-             myUL.appendChild(myLI);*/
-             myLI.appendChild(textNode);
-             myUL.appendChild(myLI);
-             console.log("Its working");
-        
-       
+    {   
+            addItem();
     }
 }
 
