@@ -15,7 +15,7 @@ body
 {
     position: absolute;
     background-color: antiquewhite;
-    height: 40rem;
+    height: auto;
     width: 80rem;
     top: 10rem;
     left:20rem;
@@ -65,4 +65,19 @@ body
     {
         transform:rotate(360deg);
     }
+}
+
+#myUL
+{
+    background-color: rgb(206, 240, 228);
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 1rem;
+}
+
+#myUL li 
+{
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
 }
